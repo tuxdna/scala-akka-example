@@ -17,6 +17,13 @@
         <akkaHttpVersion>2.0.3</akkaHttpVersion>
         <scoverage.plugin.version>1.1.1</scoverage.plugin.version>
     </properties>
+    <repositories>
+        <repository>
+            <name>Typesafe</name>
+            <id>Typesafe</id>
+            <url>https://repo.typesafe.com/typesafe/releases/</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -80,6 +87,11 @@
             <version>2.2.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.reactivemongo</groupId>
+            <artifactId>play2-reactivemongo_${scalaBinaryVersion}</artifactId>
+            <version>0.11.2.play24</version>
+        </dependency>
 
     </dependencies>
 
